@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="registration-box">
+        <h1>Registration Form</h1>
+        <form method="POST" action="/submit">
+            <input type="text" name="name" placeholder="Name" required>
+            <input type="tel" name="contact" placeholder="Contact No" required>
+            <input type="text" name="cooperative" placeholder="Cooperative name" required>
+            <input type="tel" name="emergency_contact" placeholder="Emergency Contact No" required>
+            <textarea name="address" placeholder="Address" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+	
+	<div class="background-text">
+        <p>Republic of the Philippines</p>
+    </div>
+</body>
+</html>
